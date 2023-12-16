@@ -1,0 +1,121 @@
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1;
+    /* background-color: #286090; */
+}
+
+.jumbotron p {
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+/*Navigation Bar*/
+
+.navbar {
+    background-color: hsl(206, 7%, 37%);
+    font-size: 20px;
+    border: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: hsla(56, 26%, 89%, 0.849);
+}
+
+.navbar-brand {
+    padding-top: 0px;
+    padding-right: 100px;
+    width: 140px;
+    height: 55px;
+}
+
+img {
+    height: 150%;
+    width: 150%;
+}
+
+.pic {
+    margin-top: 5vh;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 3px hsl(191, 19%, 72%);
+}
+
+#pageThree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+.tools {
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px hsl(191, 19%, 72%);
+}
+
+form {
+    line-height: 2;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.headBg {
+    margin: 0;
+    background-color: hsl(206, 7%, 37%);
+}
+
+h2 {
+    color: #303030;
+    margin-top: 35px;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+p{
+    line-height: 1.5;
+}
+
+.icons {
+    font-size: 200px;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #1e8df4;
+}
+.carousel-indicators li {
+    border-color: hsl(191, 19%, 72%);
+}
+.carousel-indicators li.active {
+    width: 5%;
+    background-color: #1e8df4;
+}
+
+.buttonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
