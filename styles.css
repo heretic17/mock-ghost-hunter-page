@@ -11,10 +11,31 @@ body {
 
 @media screen and (max-width: 768px) {
     .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
+        text-align: center;
+        margin: 25px 0;
     }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    /* .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+    } */
+
+    #pageThree {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 480px) {
+      .logo {
+        font-size: 150px;
+      }
+    /* Adjust the size of the carousel */
   }
+}
 
 #pageOne, .jumbotron {
     padding-bottom: 0;
@@ -47,7 +68,7 @@ body {
     padding-top: 0;
     padding-right: 100px;
     width: 140px;
-    height: 55px;
+    height: 50px;
 }
 
 img {
@@ -65,18 +86,18 @@ img {
 }
 
 .pic {
-    margin-top: 12vh;
+    margin-top: 3em;
     width: 100%;
     height: 100%;
     border-radius: 25px;
     box-shadow: 5px 5px 3px hsl(191, 19%, 72%);
 }
 
-#pageThree {
+#pageThree::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
     height: 50%;
 }
 
@@ -126,7 +147,7 @@ p {
 }
 
 .carousel-indicators li.active {
-    width: 5%;
+    /* width: 5%; */
     background-color: #1e8df4;
 }
 

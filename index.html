@@ -12,27 +12,27 @@
     <script src="script.js" defer></script>
     <title>Document</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
     <!--Navigation Bar-->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-        <a class="navbar-brand" href="#"><img src="/public/ghost-3-svgrepo-com.svg" alt="company logo"></a>
-        <ul class="nav navbar-nav">
-            <li><a href="#"><i class="fa-solid fa-house"></i> Home </a></li>
-            <li><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa-solid fa-address-card "></i> About <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href=""> Witness </a></li>
-                    <li><a href=""> Tools </a></li>
-                    <li><a href=""> Join </a></li>
-                </ul>
-            </li>
-            <li><a href=""><i class="fa-solid fa-bell-concierge"></i> Services </a></li>
-            <li><a href=""><i class="fa-solid fa-ghost"></i> Ghost Library </a></li>
-        </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><i class="fa-solid fa-user-plus"></i> Join Us! </a></li>
-                <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i> Login </a></li>
+        <a class="navbar-brand" href="#"><img class="logo" src="/public/ghost-3-svgrepo-com.svg" alt="company logo"></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#"><i class="fa-solid fa-house"></i> Home </a></li>
+                <li><a href="#introduction"><i class="fa-solid fa-address-card "></i> About </a></li>
+                <li><a href="#pricing"><i class="fa-solid fa-bell-concierge"></i> Services </a></li>
             </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#contact"><i class="fa-solid fa-user-plus"></i> Contact </a></li>
+                    <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i> Login </a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- Header Section: style="background-color:yellow;" -->
@@ -55,7 +55,7 @@
             </header>
     </div>
     <!-- Inroduction Section -->
-    <div id="pageTwo" class="container-fluid bg-grey">
+    <div id="introduction" class="container-fluid bg-grey">
         <div class="row">
             <div class="col-sm-4">
                 <img class="pic" src="/public/old-ha.jpg" alt="old house">
@@ -94,15 +94,15 @@
                     <div class="carousel-inner">
 
                         <div class="item active">
-                            <img class="d-block w-100" src="public/carousel/cor1.jpg" alt="corridor one">
+                            <img src="public/carousel/cor1.jpg" alt="corridor one">
                             <div class="carousel-caption">
                                 <h3>An abandoned house</h3>
                                 <p>A place where ghosts are reported is described as haunted.</p>
                             </div>
                         </div>
-
+                        <!--<img class="d-block w-100"  -->
                         <div class="item">
-                            <img class="d-block w-100" src="public/carousel/cor2.jpg" alt="corridor two">
+                            <img src="public/carousel/cor2.jpg" alt="corridor two">
                             <div class="carousel-caption">
                                 <h3>A corridor ghost in a haunted house</h3>
                                 <p>A ghost is the soul or spirit of a dead person or non-human animal that is believed to be able to appear to the living.</p>
@@ -110,7 +110,7 @@
                         </div>
 
                         <div class="item">
-                            <img class="d-block w-100" src="public/carousel/cor3.jpg" alt="corridor two">
+                            <img src="public/carousel/cor3.jpg" alt="corridor two">
                             <div class="carousel-caption">
                                 <h3>A corridor in a haunted house</h3>
                                 <p>A ghost is the soul or spirit of a dead person or non-human animal that is believed to be able to appear to the living.</p>
@@ -132,7 +132,7 @@
         </div>
     </div>
     <!-- Ghost Hunting Equipment Section -->
-    <div class="container-fluid text-center bg-grey" id="pageFour">
+    <div class="container-fluid text-center bg-grey" id="equipment">
         <h2>Tools of the Trade</h2>
         <p>Equipped with cutting-edge ghost hunting gear, our experiences are as authentic as they come. From EMF meters detecting energy fluctuations to infrared cameras capturing the unseen, you'll 
             have the chance to use real paranormal investigation equipment.</p>
@@ -152,7 +152,7 @@
         </div>
     </div>
     <!-- Join Us Form Section: -->
-    <div class="container-fluid" id="pageFive">
+    <!-- <div class="container-fluid" id="pageFive">
         <div>
             <h2 class="text-center">Join Us on the Hunt!</h2>
             <p class="text-center">Discover our upcoming ghost hunting events, each held in locations with a history steeped in the supernatural. Check out the event details, mark your calendar, and prepare for an 
@@ -161,7 +161,8 @@
             <div class="buttonDiv">
                 <button hre class="btn btn-primary btn-lg">Join Now!</button>
             </div>
-    </div>
+    </div> -->
+
     <!--Testimonials Section-->
     <div id="pageSix" class="container-fluid bg-grey">
         <h2>What Participants Say:</h2>
@@ -180,7 +181,10 @@
     
                     <div class="item">
                         <div class="text-center">
-                            <h4>"I never believed in ghosts until I joined the Ghost Hunter Experience. It's an electrifying journey into the unknown, and I can't wait to do it again!"</h4>
+                            <h4>"I never believed in ghosts 
+                                until I joined the Ghost Hunter Experience. 
+                                It's an electrifying journey into the unknown, 
+                                and I can't wait to do it again!"</h4>
                             <footer>Emily S., Paranormal Enthusiast</footer>
                         </div>
                     </div>
@@ -197,8 +201,75 @@
     </div>
         </div>
     </div>
+        <!-- Services and Pricing Section -->
+        <div id="pricing" class="container-fluid">
+            <div class="text-center">
+              <h2>Ghost Hunter Plan</h2>
+              <h4>Choose a payment plan that works for you</h4>
+            </div>
+            <div class="row slideanim">
+              <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                  <div class="panel-heading">
+                    <h1>Basic</h1>
+                  </div>
+                  <div class="panel-body">
+                    <h4><strong>Features</strong></h4>
+                    <p>Number of Ghosts Hunted: <strong>20</strong> </p>
+                    <p>Exclusive Ghost Radar: <strong>No</strong>: </p>
+                    <p>Customized Haunting Reports: <strong>No</strong></p>
+                    <p>Ghost Whisperer Consultation: <strong>Unlimited</strong></p>
+                  </div>
+                  <div class="panel-footer">
+                    <h3>$19.99</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-primary btn-lg">Sign Up</button>
+                  </div>
+                </div>      
+              </div>     
+              <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                  <div class="panel-heading">
+                    <h1>Pro</h1>
+                  </div>
+                  <div class="panel-body">
+                    <h4><strong>Features</strong></h4>
+                    <p>Number of Ghosts Hunted: <strong>50</strong> </p>
+                    <p>Exclusive Ghost Radar: <strong>No</strong></p>
+                    <p>Customized Haunting Reports: <strong>Yes</strong> </p>
+                    <p>Ghost Whisperer Consultation: <strong>Unlimited</strong></p>
+                  </div>
+                  <div class="panel-footer">
+                    <h3>$29.99</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-primary btn-lg">Sign Up</button>
+                  </div>
+                </div>      
+              </div>       
+              <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                  <div class="panel-heading">
+                    <h1>Premium</h1>
+                  </div>
+                  <div class="panel-body">
+                    <h4><strong>Features</strong></h4>
+                    <p>Number of Ghosts Hunted: <strong>Unlimited</strong> </p>
+                    <p>Exclusive Ghost Radar: <strong>Yes</strong> </p>
+                    <p> Customized Haunting Reports: <strong>Yes</strong></p>
+                    <p>Ghost Whisperer Consultation: <strong>Unlimited</strong> </p>
+                  </div>
+                  <div class="panel-footer">
+                    <h3>$49.99</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-primary btn-lg">Sign Up</button>
+                  </div>
+                </div>      
+              </div>    
+            </div>
+          </div>
+    
     <!--Booking and Registration Section:-->
-    <div id="pageSeven" class="container-fluid">
+    <!-- <div id="pageSeven" class="container-fluid">
         <h2>Reserve Your Spot</h2>
         <p class="text-center">Ready to face the unknown? Join the hunt by securing your spot for the next Ghost Hunter Experience. Spaces are limited, so act fast to guarantee your place in this otherworldly adventure.</p>
         <div class="form-sign">
@@ -221,7 +292,43 @@
       <footer class="container-fluid text-center">
           <a class="toTop" href="#" title="To Top">
             <span class="glyphicon glyphicon-chevron-up"></span>
-          </a>
+          </a> -->
+
+          <!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <br>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +00 000-000-000</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+      </div>
+      <div class="col-sm-7 slideanim">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+          <!--Footer-->
+        <footer class="container-fluid text-center">
+        <a class="toTop" href="#" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
         <h4>Connect With Us</h4>
         <div class="row">
             <p><a href="">🐦 Twitter</a> | <a href="">👻 Facebook<a href=""></a> | <a href="">📸 Instagram</a></p>
