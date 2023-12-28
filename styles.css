@@ -37,6 +37,27 @@ body {
   }
 }
 
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
 #pageOne, .jumbotron {
     padding-bottom: 0;
     margin-bottom: 0;
@@ -51,6 +72,16 @@ body {
 
 .container-fluid {
     padding: 60px 50px;
+}
+
+#equipment {
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+#pageSix {
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 /* Navigation Bar */
@@ -93,7 +124,7 @@ img {
     box-shadow: 5px 5px 3px hsl(191, 19%, 72%);
 }
 
-#pageThree::after {
+#pageThree {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,7 +221,7 @@ p {
     margin-right: 20px; 
     place-self: end;
     margin-top: calc(100vh + var(--offset));
-  
+
     /* visual styling */
     text-decoration: none;
     padding: 20px;
@@ -198,4 +229,30 @@ p {
     color: #1e8df4;
     border-radius: 100px;
     white-space: nowrap;
-  }
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+textarea {
+    resize: none;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.logo-small {
+    text-align: center;
+    font-size: 50px;
+}
+
+#offer {
+    text-align: center;
+}
