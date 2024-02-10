@@ -19,11 +19,9 @@ body {
         margin-bottom: 35px;
     }
 
-    /* .carousel-inner > .item > img,
-    .carousel-inner > .item > a > img {
-    width: 70%;
-    margin: auto;
-    } */
+.carousel-caption {
+    display: none;
+}
 
     #pageThree {
         width: 100%;
@@ -149,7 +147,7 @@ img {
 }
 
 h2 {
-    color: #303030;
+    color: #1d1b1b;
     margin-top: 35px;
     text-align: center;
 }
@@ -255,4 +253,9 @@ textarea {
 
 #offer {
     text-align: center;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
 }
